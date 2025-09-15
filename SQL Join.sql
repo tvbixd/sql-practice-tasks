@@ -4,8 +4,8 @@ Sort results by the employee’s name, then highest total amount .*/
 
 SELECT 
     o.OrderID,
-    CONCAT(c.FirstName,' ' ,c.lastName) AS CustomerFullName,
-    CONCAT(e.FirstName,' ', e.LastName) AS EmployeeFullName,
+    CONCAT(c.FirstName, ' ' ,c.lastName) AS CustomerFullName,
+    CONCAT(e.FirstName, ' ', e.LastName) AS EmployeeFullName,
     p.Product,
     o.Quantity,
     (o.Quantity * p.Price) AS TotalSales
