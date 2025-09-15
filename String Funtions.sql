@@ -6,7 +6,7 @@ Return the length of each customer’s full name (use LENGTH() or LEN()).
 Show the first 3 letters of each last_name (use SUBSTRING() / LEFT()). */
 
 SELECT 
-  CONCAT( UPPER(FirstName), ' ', UPPER(LastName)) AS full_name_upper,
+  CONCAT( UPPER(FirstName),' ', UPPER(LastName)) AS full_name_upper,
   LOWER(LastName) AS last_name_lower,
   LEFT(FirstName, 1),
   LEN(FirstName + LastName) AS full_name_length,
