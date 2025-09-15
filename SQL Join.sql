@@ -1,4 +1,3 @@
--- Playground
 /* Show the order_id, customer_name, the employee’s full name (first_name + last_name), and the product_name.
 Include the quantity and the total_amount (quantity * price).
 Sort results by the employee’s name, then highest total amount.
@@ -6,8 +5,8 @@ Sort results by the employee’s name, then highest total amount.
 
 SELECT 
     o.OrderID,
-    CONCAT(c.FirstName, ' ' ,c.lastName) AS CustomerFullName,
-    CONCAT(e.FirstName, ' ', e.LastName) AS EmployeeFullName,
+    CONCAT(c.FirstName,' ' ,c.lastName) AS CustomerFullName,
+    CONCAT(e.FirstName,' ', e.LastName) AS EmployeeFullName,
     p.Product,
     o.Quantity,
     (o.Quantity * p.Price) AS TotalSales
