@@ -1,4 +1,4 @@
-/* customers_2024 vs customers_2025:
+/* Customers and Employees:
 UNION → Find all unique names (first + last) that appear in either customers or employees.
 INTERSECT → Find names that appear in both customers and employees.
 EXCEPT → Find customers who are not employees. */
